@@ -9,7 +9,8 @@ return(
     <div className="post-container">
             <img width="25px" src={props.post.thumbnailUrl} alt={props.post.username} /> {props.post.username}<br />
         <img width="500px" src={props.post.imageUrl} alt="image" />
-        <CommentSection comments={props.post.comments} />
+        <CommentSection comments={props.post.comments}
+         />
     </div>
     
 )

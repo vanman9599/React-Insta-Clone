@@ -10,17 +10,29 @@ class App extends React.Component {
     super();
     this.state = {
     posts: []
+    
     }
   }
   componentDidMount(){
     this.setState({ posts: dummyData });
   }
+
+
+//   handleChanges = event =>{
+//     event.preventDefault();
+//     this.setState({comment: event.target.value});
+//  }
+
+ 
   render(){
   return (
     <div className="App">
      <SearchBar />
       {this.state.posts.map(post => {
-        return <PostContainer key={post.timestamp} post={post} />
+        return <PostContainer key={post.timestamp}
+          post={post}
+         
+            />
 
       })}
     </div>
